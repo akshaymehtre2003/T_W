@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations</title>
+    <link rel="stylesheet" href="destinationdetails.css">
+</head>
+<body>
+    <div class="destination-details">
+        <div class="destination-card">
+            <h2>Pune, Maharashtra:</h2>
+            <p>Weather: Sunny with a high of 30°C</p>
+            <ul>
+                <li><button onclick="showDetails('Aga Khan Palace')">Aga Khan Palace</button></li>
+                <li><button onclick="showDetails('Shaniwar Wada')">Shaniwar Wada</button></li>
+                <li><button onclick="showDetails('Sinhagad Fort')">Sinhagad Fort</button></li>
+                <li><button onclick="showDetails('Osho Ashram')">Osho Ashram</button></li>
+                <li><button onclick="showDetails('Dagdusheth Halwai Ganpati Temple')">Dagdusheth Halwai Ganpati Temple</button></li>
+            </ul>
+        </div>
+        <div class="destination-card">
+            <h2>Mumbai, Maharashtra:</h2>
+            <p>Weather: Sunny with a high of 30°C</p>
+            <ul>
+                <li><button onclick="showDetails('Gateway of India')">Gateway of India</button></li>
+                <li><button onclick="showDetails('Marine Drive')">Marine Drive</button></li>
+                <li><button onclick="showDetails('Chhatrapati Shivaji Terminus')">Chhatrapati Shivaji Terminus</button></li>
+                <li><button onclick="showDetails('Elephanta Caves')">Elephanta Caves</button></li>
+                <li><button onclick="showDetails('Colaba Causeway')">Colaba Causeway</button></li>
+            </ul>
+        </div>
+        <div class="destination-card">
+            <h2>Delhi:</h2>
+            <p>Weather: Sunny with a high of 30°C</p>
+            <ul>
+                <li><button onclick="showDetails('India Gate')">India Gate</button></li>
+                <li><button onclick="showDetails('Red Fort')">Red Fort</button></li>
+                <li><button onclick="showDetails('Qutub Minar')">Qutub Minar</button></li>
+                <li><button onclick="showDetails('Humayun s Tomb')">Humayun s Tomb</button></li>
+                <li><button onclick="showDetails('Lotus Temple')">Lotus Temple</button></li>
+            </ul>
+        </div>
+        <div class="destination-card">
+            <h2>Kolkata, West Bengal:</h2>
+            <p>Weather: Sunny with a high of 30°C</p>
+            <ul>
+                <li><button onclick="showDetails('Victoria Memorial')">Victoria Memorial</button></li>
+                <li><button onclick="showDetails('Howrah Bridge')">Howrah Bridge</button></li>
+                <li><button onclick="showDetails('Dakshineswar Kali Temple')">Dakshineswar Kali Temple</button></li>
+                <li><button onclick="showDetails('Indian Museum')">Indian Museum</button></li>
+                <li><button onclick="showDetails('Marble Palace')">Marble Palace</button></li>
+            </ul>
+        </div>
+        <div class="destination-card">
+            <h2>Lucknow, Uttar Pradesh:</h2>
+            <p>Weather: Sunny with a high of 30°C</p>
+            <ul>
+                <li><button onclick="showDetails('Bara Imambara')">Bara Imambara</button></li>
+                <li><button onclick="showDetails('Chota Imambara')">Chota Imambara</button></li>
+                <li><button onclick="showDetails('Rumi Darwaza')">Rumi Darwaza</button></li>
+                <li><button onclick="showDetails('Lucknow Zoo')">Lucknow Zoo</button></li>
+                <li><button onclick="showDetails('Residency')">Residency</button></li>
+            </ul>
+        </div>
+        <div class="destination-card">
+            <h2>Bangalore, Karnataka:</h2>
+            <p>Weather: Sunny with a high of 30°C</p>
+            <ul>
+                <li><button onclick="showDetails('Lalbagh Botanical Garden')">Lalbagh Botanical Garden</button></li>
+                <li><button onclick="showDetails('Bangalore Palace')">Bangalore Palace</button></li>
+                <li><button onclick="showDetails('Cubbon Park')">Cubbon Park</button></li>
+                <li><button onclick="showDetails('Tipu Sultans Summer Palace')">Tipu Sultans Summer Palace</button></li>
+                <li><button onclick="showDetails('ISKCON Temple')">ISKCON Temple</button></li>
+            </ul>
+        </div>
+        <div class="destination-card">
+            <h2>Hyderabad, Telangana:</h2>
+            <p>Weather: Sunny with a high of 30°C</p>
+            <ul>
+                <li><button onclick="showDetails('Charminar')">Charminar</button></li>
+                <li><button onclick="showDetails('Golconda Fort')">Golconda Fort</button></li>
+                <li><button onclick="showDetails('Hussain Sagar Lake')">Hussain Sagar Lake</button></li>
+                <li><button onclick="showDetails('Salar Jung Museum')">Salar Jung Museum</button></li>
+                <li><button onclick="showDetails('Ramoji Film Citys')">Ramoji Film Citys</button></li>
+            </ul>
+        </div>
+        <!-- Add more destination cards with buttons for other cities -->
+    </div>
+
+    <!-- Destination Details Container -->
+    <div class="details-container" id="detailsContainer">
+        <!-- Details will be displayed here -->
+    </div>
+
+    <style>
+        /* CSS for Destination Cards */
+        .destination-card {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        /* CSS for Destination Details */
+        .details-container {
+            background-color: #fff;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Add more CSS styling as needed for weather conditions, etc. */
+    </style>
+
+    <script>
+        function showDetails(destination) {
+            const detailsContainer = document.getElementById('detailsContainer');
+            // Simulate fetching weather conditions, replace with actual data
+            const weatherConditions = "Weather: Sunny with a high of 30°C";
+            detailsContainer.innerHTML = `<h2>${destination}</h2>
+                                           <p>${weatherConditions}</p>
+                                           <p>Details about ${destination} will be displayed here.</p>`;
+        }
+    </script>
+    <script src="destinationdetails.js"></script>
+</body>
+</html>

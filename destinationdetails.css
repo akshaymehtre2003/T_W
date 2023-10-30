@@ -1,0 +1,36 @@
+/* CSS for Destination Details Page */
+.details-container {
+    background-color: #724b4b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.details-container h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.details-container p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.details-container button {
+    background-color: #3498db;
+    color: #6ca7b0;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.details-container button:hover {
+    background-color: #2980b9;
+}
+
+/* Add more styles as needed for specific elements within the details container */

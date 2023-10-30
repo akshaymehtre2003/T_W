@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Cities in India</title>
+    <link rel="stylesheet" href="searchresult.css">
+    <title>Find My Location on Google Maps</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Select a City in India</h1>
+        <div class="dropdown">
+            <select id="citySelect">
+                <option value="" disabled selected>Select a city</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Chennai">Chennai</option>
+                <!-- Add more cities here -->
+            </select>
+        </div>
+        <div class="location-button">
+            <button id="locateUser">Locate My Location</button>
+        </div>
+        
+        <div id="map"></div>
+    </div>
+    <script src="public\searchresult.js"></script>
+</body>
+</html>
+
+

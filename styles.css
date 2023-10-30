@@ -1,0 +1,222 @@
+/* Add your CSS styles here */
+body{
+    background-image: url(https://wallpapers.com/images/featured/travel-ibk7fgrvtvhs7qzg.jpg);
+}
+header {
+    
+    color: #343c3d;
+    text-align: center;
+    padding: 20px;
+}
+
+.search-bar {
+    text-align: center;
+    padding: 20px;
+    box-shadow: 50px;
+}
+
+footer {
+    background-color: #75a2b57c;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 350px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+    margin-right: 20px;
+}
+/* Navigation Bar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff8c00; /* Change the color on hover as needed */
+}
+/* Style for sticky navigation bar */
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
+#weather-info {
+    background-color: #7dbdd6;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    position: fixed;
+    top: 300px;
+    right: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+#weather-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#weather-info p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+#weather-info button {
+    background-color: #ff4a4a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#weather-info button:hover {
+    background-color: #ff3333;
+}
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 600px) {
+    #weather-info {
+        width: 90%;
+        top: 10px;
+        right: 5%;
+    }
+}
+
+.search-bar {
+    background: linear-gradient(to bottom, #0097e6, #005d9d);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding-right: 500px;
+}
+
+#locationInput {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    margin-right: 10px;
+    outline: none;
+}
+
+#locationInput::placeholder {
+    color: #fff;
+}
+
+#locationInput:focus {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+#getRecommendationsBtn {
+    background: #ff4a4a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#getRecommendationsBtn:hover {
+    background: #ff3333;
+}
+
+.navbar {
+    background-color: #60a9d1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #6e93ab;
+}
+
+
